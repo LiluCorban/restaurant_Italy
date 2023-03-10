@@ -1,0 +1,64 @@
+$color:white;
+$size:100%; 
+$size1: 10; 
+$color1:black;
+
+
+
+body{
+    margin:0;
+    font-family: 'Montserrat', sans-serif;
+    .wrapper {
+        width:$size;
+        display: flex;
+        flex-direction: column;
+        header {
+            width: $size;
+            background-color: $color;
+            
+            nav{
+                display: flex;
+                flex-direction: row;
+                height: $size1*10+px;
+              ul{
+                display: flex;
+                flex-direction: row;
+                list-style: none;
+                justify-content: space-around;
+                width: $size;
+                align-items: center;
+                padding: 0;
+                margin: 0;
+              }
+              li{
+                padding: $size1+px;
+                width:20%;
+                text-align: center;
+                
+                a {
+                    text-decoration: none;
+                    color: $color1;
+                    &:hover{
+                        border-bottom: 2px solid $color1;
+                    }
+                }
+              }
+
+            }
+
+        }
+        main{
+            width: $size;
+            div{
+                width: $size;
+                padding: $size1*3+px;
+                text-align: center;
+                box-sizing: border-box;
+            }
+            img{
+                width: $size;
+            }
+        }
+    }
+
+}
