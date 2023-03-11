@@ -15,6 +15,9 @@ body{
         header {
             width: $size;
             background-color: $color;
+            position: fixed;
+            z-index: 2;
+            height: $size1*10+px;
             
             nav{
                 display: flex;
@@ -54,6 +57,7 @@ body{
                 padding: $size1*3+px;
                 text-align: center;
                 box-sizing: border-box;
+                margin-top: $size1*7+px;
             }
             img{
                 width: $size;
